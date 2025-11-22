@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: MysoreHeritage
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn MysoreHeritage.wsgi:application"
+    plan: free
